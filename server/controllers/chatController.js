@@ -11,7 +11,7 @@ export const chatCompletion = async (req, res) => {
     const { prompt } = req.body
 
     const answer = await openapi.completions({
-      model: 'gpt-3.5-turbo',
+      model: 'text-davinci-003',
       prompt: prompt,
       temperature: 0,
       max_tokens: 3000,
